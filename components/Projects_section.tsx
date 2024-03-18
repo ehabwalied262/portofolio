@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import ProjectComponent from './Project_component';
 
 const ProjectsSection: React.FC = () => {
-    const [showPhoneList, setShowPhoneList] = useState(false);
+    const [showPhoneList, setShowPhoneList] = useState(true);
     const [showWebsiteList, setShowWebsiteList] = useState(false);
 
     const togglePhoneList = () => {
