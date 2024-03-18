@@ -1,17 +1,18 @@
-import React from 'react'
-import ToggleDarkMode from './ToggleDarkMode'
+import React from 'react';
+import ToggleDarkMode from './ToggleDarkMode';
 
 export default function NavBar() {
+  
   return (
-    <nav className="flex justify-between items-center py-4 px-8 text-white">
-    <div className="font-bold">Ehab.dev</div>
-      {/* <ToggleDarkMode /> */}
-    <div>
-        <a href="#" className="mr-4">Home</a>
-        <a href="#" className="mr-4">Projects</a>
-        <a href="#" className="mr-4">About</a>
+    <nav className="flex justify-between items-center py-4 px-8">
+      <div className="font-bold">Ehab.dev</div>
+      <div className='flex items-center gap-4'>
+        <a href="#"  >Home</a>
+        <a href="#"  >About</a>
+        <a href="#"  >Projects</a>
         <a href="#">Contact</a>
-    </div>
+        <ToggleDarkMode />
+      </div>
     </nav>
-  )
+  );
 }
